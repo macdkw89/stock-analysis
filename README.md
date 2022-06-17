@@ -15,10 +15,12 @@ Original is on the left, refactored on the right
 
 ![original 2017 code](resources/original_2017.png) ![refactored 2017 code](resources/refactored_2017.png)
 
-![original 2018 code](resources/refactored_2017.png) ![refactored 2018 code](resources/refactored_2018.png) = 0.4765625
+![original 2018 code](resources/refactored_2017.png) ![refactored 2018 code](resources/refactored_2018.png)
 
 Against my expectations, the code took longer to run once refactored. 
 
 ## Summary
-The advantages of refactoring code include more versatility, reducing complexity, 
+The advantages of refactoring code include more versatility, reducing complexity, and improving the understandability of the code. Using refactored code can help other developers to adapt your code for their needs. Another advantage, although apparently not in my example, is improved run speed of the code and performance.
+
+The disadvantages of refactoring code depend greatly on who is doing the refactoring and why they're doing it. A great example of a disadvantage would be new bugs that appear in the code that weren't there before, taking up time to debug. Other issues are changed code behavior and outcomes that aren't immediately noticed once refactored. 
 
