@@ -11,6 +11,7 @@ The results indicated two distinct findings
 ### Runtime differences between original and refactored code
 The difference in runtime from the original green_stocks code and the refactored code can be illustrated here.
 
+Original is on the left, refactored on the right
 ![original 2017 code](resources/original_2017.png) ![refactored 2017 code](resources/refactored_2017.png)
 
 ![original 2018 code](resources/refactored_2017.png) ![refactored 2018 code](resources/refactored_2018.png) = 0.4765625
