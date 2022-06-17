@@ -24,3 +24,81 @@ The advantages of refactoring code include more versatility, reducing complexity
 
 The disadvantages of refactoring code depend greatly on who is doing the refactoring and why they're doing it. A great example of a disadvantage would be new bugs that appear in the code that weren't there before, taking up time to debug. Other issues are changed code behavior and outcomes that aren't immediately noticed once refactored. 
 
+## Extras
+Also in the challenge file is a fun self-invented project that I did inspired by one of the "skill drill" exercises in the modules. I created a vbs script that creates an accurate chess board with proper square names using all of the formatting and loops that were taught in the course. I'm quite proud of it. Code can be read here:
+
+```
+Sub createChessBoard()
+    
+    Worksheets("Chess").Activate
+
+    'create squares
+    For x = 1 To 8
+        For y = 1 To 8
+            Cells(x + 1, y + 1).Value = x + y
+            If Cells(x + 1, y + 1).Value Mod 2 = 1 Then
+                Cells(x + 1, y + 1).Interior.ColorIndex = 48
+            Else
+                Cells(x + 1, y + 1).Interior.ColorIndex = 2
+            End If
+        Next y
+    Next x
+    
+    'make rectangles into squares
+    Columns("A:J").ColumnWidth = 10
+    Rows("1:10").RowHeight = 50
+    'make square borders
+    Range("B2:I9").Borders().LineStyle = xlContinuous
+    Range("B2:I9").Borders().Weight = xlThick
+    
+    Cells.ClearContents
+    Call createSquareNames
+    
+End Sub
+
+Sub createSquareNames()
+    'make sure we're on the right sheet
+    Worksheets("Chess").Activate
+    
+    'create variable so we can reverse the order of ranks
+    Dim reverse As Integer
+    reverse = 8
+    
+    'create the names
+    For Rank = 1 To 8
+        For File = 1 To 8
+            If File = 1 Then
+                Cells(Rank + 1, File + 1).Value = "A" & reverse
+            End If
+            If File = 2 Then
+                Cells(Rank + 1, File + 1).Value = "B" & reverse
+            End If
+            If File = 3 Then
+                Cells(Rank + 1, File + 1).Value = "C" & reverse
+            End If
+            If File = 4 Then
+                Cells(Rank + 1, File + 1).Value = "D" & reverse
+            End If
+            If File = 5 Then
+                Cells(Rank + 1, File + 1).Value = "E" & reverse
+            End If
+            If File = 6 Then
+                Cells(Rank + 1, File + 1).Value = "F" & reverse
+            End If
+            If File = 7 Then
+                Cells(Rank + 1, File + 1).Value = "G" & reverse
+            End If
+            If File = 8 Then
+                Cells(Rank + 1, File + 1).Value = "H" & reverse
+            End If
+        Next File
+        'this changes the file number
+        reverse = reverse - 1
+    Next Rank
+    'align cells to bottom right and make small
+    Range("B2:I9").HorizontalAlignment = -4152
+    Range("B2:I9").Font.Size = 8
+    
+End Sub
+```
+
