@@ -9,7 +9,7 @@ This project in particular, compared to the previous modules, is to refactor the
 
 The results indicated two distinct findings
 
-- The first finding is that in [2017](resources/2017_table.png), with one exception (TERP), were all (ironically) in the green. The market value went up significantly during this time period. 
+- The first finding is that in [2017](resources/2017_table.png), with one exception (TERP), all of the tickers were (ironically) in the green. The market value went up significantly during this time period. 
 
 - The second finding is that in [2018](resources/2018_table.png), with two exceptions (ENPH and RUN), stocks were down significantly but not down as much as they were to start the 2017 session.
 
