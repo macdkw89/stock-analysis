@@ -4,9 +4,14 @@
 The purpose of this analysis is to help Steve and his parents make decisions on which green-energy stocks look like the best investments. 
 
 ## Results
+
 The results indicated two distinct findings
+
 - The first finding is that in [2017](resources/2017_table.png), with one exception (TERP), were all (ironically) in the green. The market value went up significantly during this time period. 
+
 - The second finding is that in [2018](resources/2018_table.png), with two exceptions (ENPH and RUN), stocks were down significantly but not down as much as they were to start the 2017 session. The runtime for 2018 can be seen [here](resources/VBA_Challenge_2018.png)
+
+I went a step further and created an additional tab in the worksheet that combines the data found in both 2017 and 2018 so we can look at total value change for each ticker. Overall, the stock that increased the most was ENPH, and the stock that went down the most was JKS. Overall, the increase in value in 2017 overshadowed the market dip in 2019, making most of these stocks a good option for purchase based on low price point and proven market performance. Table can be viewed [here](resources/2017_vs_2018_table.png).
 
 ### Runtime differences between original and refactored code
 The difference in runtime from the original green_stocks code and the refactored code can be illustrated here.
@@ -33,6 +38,11 @@ Advantages of refactoring this VBA script include the ease of adding different t
 
 Disadvantages include difficulty in locating different bugs in the code should they arise. Also, in this particular example, the run time was increased after refactoring. The specific refactoring guidelines also don't account for the possibility of this code running for an entire stock index such as the NASDAQ or S&P500 which have hundreds if not thousands of different stock tickers as opposed to just the 12 outlined here. 
 
+## Issues with the data
+
+Out of curiosity, I decided to run a pivot table on the data to make a line chart for the different tickers. I have found that some of the data is incomplete or inconsistent. It appears that at the start of 2018, some of the ticker information is drastically inflated or distorted in some way. I even went into the data itself to find that these are infact issues with the data set and not my pivot table or line chart. This can be seen here:
+
+![Line_chart](resources/line_chart.png)
 
 ## Extras
 Also in the challenge file is a fun self-invented project that I did inspired by one of the "skill drill" exercises in the modules. I created a vbs script that creates an accurate chess board with proper square names using all of the formatting and loops that were taught in the course. I'm quite proud of it.
