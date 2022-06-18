@@ -9,7 +9,7 @@ The results indicated two distinct findings
 
 - The first finding is that in [2017](resources/2017_table.png), with one exception (TERP), were all (ironically) in the green. The market value went up significantly during this time period. 
 
-- The second finding is that in [2018](resources/2018_table.png), with two exceptions (ENPH and RUN), stocks were down significantly but not down as much as they were to start the 2017 session. The runtime for 2018 can be seen [here](resources/VBA_Challenge_2018.png)
+- The second finding is that in [2018](resources/2018_table.png), with two exceptions (ENPH and RUN), stocks were down significantly but not down as much as they were to start the 2017 session.
 
 I went a step further and created an additional tab in the worksheet that combines the data found in both 2017 and 2018 so we can look at total value change for each ticker. Overall, the stock that increased the most was ENPH, and the stock that went down the most was JKS. Overall, the increase in value in 2017 overshadowed the market dip in 2019, making most of these stocks a good option for purchase based on low price point and proven market performance. Table can be viewed [here](resources/2017_vs_2018_table.png).
 
