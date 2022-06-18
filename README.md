@@ -20,9 +20,19 @@ Original is on the left, refactored on the right
 Against my expectations, the code took longer to run once refactored. 
 
 ## Summary
+
+### Advantages and disadvantages of refactoring code
+
 The advantages of refactoring code include more versatility, reducing complexity, and improving the understandability of the code. Using refactored code can help other developers to adapt your code for their needs. Another advantage, although apparently not in my example, is improved run speed of the code and performance.
 
 The disadvantages of refactoring code depend greatly on who is doing the refactoring and why they're doing it. A great example of a disadvantage would be new bugs that appear in the code that weren't there before, taking up time to debug. Other issues are changed code behavior and outcomes that aren't immediately noticed once refactored. 
+
+### Advantages and disadvantages of refactoring this VBA script
+
+Advantages of refactoring this VBA script include the ease of adding different ticker information to the 2017 and 2018 tabs, such as PE ratio or other stock market metrics. Using variables for the ticker index makes it easier to add different tickers, or even to remove them from the code. 
+
+Disadvantages include difficulty in locating different bugs in the code should they arise. Also, in this particular example, the run time was increased after refactoring. The specific refactoring guidelines also don't account for the possibility of this code running for an entire stock index such as the NASDAQ or S&P500 which have hundreds if not thousands of different stock tickers as opposed to just the 12 outlined here. 
+
 
 ## Extras
 Also in the challenge file is a fun self-invented project that I did inspired by one of the "skill drill" exercises in the modules. I created a vbs script that creates an accurate chess board with proper square names using all of the formatting and loops that were taught in the course. I'm quite proud of it.
