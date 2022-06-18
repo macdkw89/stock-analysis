@@ -1,7 +1,9 @@
 # Green Stocks
 
 ## Overview of Project
-The purpose of this analysis is to help Steve and his parents make decisions on which green-energy stocks look like the best investments. 
+The purpose of this analysis is to help Steve and his parents make decisions on which green-energy stocks to invest in using 2017 and 2018 calendar year market data and analysis. 
+
+This project in particular, compared to the previous modules, is to refactor the code that we've built so we can make it easier to understand, and improve adaptability of the code to other datasets in case we are provided an opportunity to reuse this code. 
 
 ## Results
 
