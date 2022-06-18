@@ -15,7 +15,7 @@ Original is on the left, refactored on the right
 
 ![original 2017 code](resources/original_2017.png) ![refactored 2017 code](resources/refactored_2017.png)
 
-![original 2018 code](resources/refactored_2017.png) ![refactored 2018 code](resources/refactored_2018.png)
+![original 2018 code](resources/original_2018.png) ![refactored 2018 code](resources/refactored_2018.png)
 
 Against my expectations, the code took longer to run once refactored. 
 
